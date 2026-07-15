@@ -1,0 +1,6 @@
+@Talke.Api_HostAddress = http://localhost:5186
+
+GET {{Talke.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
