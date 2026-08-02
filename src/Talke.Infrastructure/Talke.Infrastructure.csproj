@@ -2,6 +2,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Talke.Application\Talke.Application.csproj" />
+    <ProjectReference Include="..\Talke.Domain\Talke.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.10" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -8,11 +8,21 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Talke.Application\Talke.Application.csproj" />
     <ProjectReference Include="..\Talke.Infrastructure\Talke.Infrastructure.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+  <!-- O erro provavelmente está na sintaxe da linha abaixo -->
+  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
+</ItemGroup>
 
 </Project>
