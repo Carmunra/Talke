@@ -1,4 +1,7 @@
 using FluentValidation;
+using Talke.Application.DTOs.Auth;
+
+namespace Talke.Application.Validators;
 
 public class CreateUserRequestValidator : AbstractValidator<CreateUserRequestDto>
 {

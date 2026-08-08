@@ -1,7 +1,11 @@
+using Talke.Domain.Enums;
+
+namespace Talke.Application.DTOs.Auth;
+
 public record UserResponseDto(
-    string Id,
+    Guid Id,
     string FirstName,
     string LastName,
     string Email,
-    UserRole Role // Enum que já temos no Domain
+    UserRole Role
 );

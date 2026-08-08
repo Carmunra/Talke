@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Talke.Domain.Entities;
+using Talke.Domain.Repositories;
 using Talke.Infrastructure.Data;
+
+namespace Talke.Infrastructure.Repositories;
 
 public class UserRepository : IUserRepository
 {
@@ -13,14 +16,13 @@ public class UserRepository : IUserRepository
 
     public async Task<bool> ExistsByEmailAsync(string email)
     {
-        // Vai no banco e verifica se já existe um usuário com o email fornecido
-        return await _context.Set<User>().AnyAsync(u => u.Email == email);
+        var normalizedEmail = email.Trim().ToLowerInvariant();
+        return await _context.Users.AnyAsync(u => u.Email == normalizedEmail);
     }
 
     public async Task AddAsync(User user)
     {
-        // Adiciona o usuário ao contexto e salva as alterações
-        await _context.Set<User>().AddAsync(user);
+        await _context.Users.AddAsync(user);
         await _context.SaveChangesAsync();
     }
 }

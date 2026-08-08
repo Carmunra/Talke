@@ -1,5 +1,3 @@
-using BCrypt.Net;
-
 namespace Talke.Infrastructure.Security;
 
 public interface IPasswordHasher

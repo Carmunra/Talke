@@ -1,4 +1,5 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -11,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talke.Domain", "src\Talke.Domain\Talke.Domain.csproj", "{54C590E2-45F9-4791-A7B0-2F1760FA3863}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talke.Infrastructure", "src\Talke.Infrastructure\Talke.Infrastructure.csproj", "{6E1711DC-32E0-4504-B619-4B28DC780E62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talke.Api.Tests", "tests\Talke.Api.Tests\Talke.Api.Tests.csproj", "{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +75,18 @@ Global
 		{6E1711DC-32E0-4504-B619-4B28DC780E62}.Release|x64.Build.0 = Release|Any CPU
 		{6E1711DC-32E0-4504-B619-4B28DC780E62}.Release|x86.ActiveCfg = Release|Any CPU
 		{6E1711DC-32E0-4504-B619-4B28DC780E62}.Release|x86.Build.0 = Release|Any CPU
+		{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0}.Debug|x64.Build.0 = Debug|Any CPU
+		{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0}.Debug|x86.Build.0 = Debug|Any CPU
+		{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0}.Release|x64.ActiveCfg = Release|Any CPU
+		{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0}.Release|x64.Build.0 = Release|Any CPU
+		{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0}.Release|x86.ActiveCfg = Release|Any CPU
+		{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,5 +96,6 @@ Global
 		{714E99DD-6E13-40A6-A2A3-CB46B9DC1E32} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{54C590E2-45F9-4791-A7B0-2F1760FA3863} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 		{6E1711DC-32E0-4504-B619-4B28DC780E62} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{A055E3D5-8EF7-49FF-98D6-561C6A5B38B0} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 	EndGlobalSection
 EndGlobal

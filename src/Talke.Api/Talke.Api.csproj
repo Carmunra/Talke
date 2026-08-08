@@ -1,9 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>4499ff78-bcc9-449e-b2d4-104ec4989174</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,16 +14,14 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Talke.Domain\Talke.Domain.csproj" />
     <ProjectReference Include="..\Talke.Application\Talke.Application.csproj" />
     <ProjectReference Include="..\Talke.Infrastructure\Talke.Infrastructure.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-  <!-- O erro provavelmente está na sintaxe da linha abaixo -->
-  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.3" />
-</ItemGroup>
 
 </Project>
